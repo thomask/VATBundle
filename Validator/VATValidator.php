@@ -25,7 +25,7 @@ class VATValidator extends ConstraintValidator
                 return true;
             }
         } catch (VATException $exception) {
-            return true;
+
         }
 
         $this->context->addViolation($constraint->message);
